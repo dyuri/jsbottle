@@ -1,0 +1,5 @@
+<body onload=eval(s.textContent)>
+<pre id=p style="font-size:5vh;width:40vh;margin:auto"></pre>
+<pre id=s>
+b=[];B=S=O=0;c='5.====.\n5;,,,,;\n6}3{\n5/3O2\\\n4;3o4;\n3/________\\\n2|57|\n2|4C0DE4|\n3\\.______./\n3|3O6|\n3|2o7|\n3)3o3O3(\n2/8o3\\\n2|7o4|\n2`.__,__,__.`'.split('').map((x,i)=>{if(x=='O'){b.push([i+O])}if(x=='o'){b[b.length-1].unshift(i+O)}if(+x){O+=x-2;return Array(+x).join(' ')}return x}).join('');z=()=>{B=B||1+Math.random()*b.length|0;S=S+1;k=b[B-1][S-1];if(!k){B=S=0}p.innerHTML=c.replace(/o/ig,' ').split('').map((x,i)=>i==k?'o':x).join('');setTimeout(z,300)};z()
+</pre>
