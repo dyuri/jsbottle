@@ -1,47 +1,18 @@
 <body id=b onload=eval(b.textContent)><pre>
-                       /*` .====. `*/                       //
-                       /*` ;,,,,; `*/                       //
-                        /*` }##{ `*/                        //
-                       /*` /####\ `*/                       //
-//IDE JoN PRoBA SZoVEG/*` ;######; `*/   // IDE IS          //
-                     /*` /########\ `*/                     //
-                    /*` |``````````| `*/                    //
-                    /*` |   C0DE   | `*/                    //
-                     /*` \.______./ `*/                     //
-                     /*` |########| `*/                     //
-                     /*` |########| `*/                     //
-                     /*` )########( `*/                     //
-                    /*` /##########\ `*/                    //
-                    /*` |##########| `*/                    //
-                    /*` '.##,##,##.' `*/                    //
-                    /*`   '' '' ''   `*/                    //
-// code here
-// lines: 16
-c = b.textContent;
-S = b.style;
-l = c.split('\n')[1].length;
-s = c.split('');
-h = '\43';
-H = '\140';
-k = '\117';
-B = s.map((x,i)=>[x,i]).filter(x=>x[0]==h);
-A = 0;
-d = 2;
-K = !1;
-C = x => x ? Z[x]||'#fff' : '#333';
-z = F => {
-  d = d?0:2;
-  A = s[A-l-d]==h ? A-l-d : B[Math.random()*B.length|0][1];
-  b.innerHTML = '\74pre\76'+s.map((x,i)=>{
-    v = i==A?k:x==k?h:x;
-    K = x==H ? !K : K;
-    return v.fontcolor(C(x!=H ? K&&v : 0))
-  }).join('');
-  setTimeout(z, 500);
-};
-Z = {
-  '#': '#865',
-  'O': '#a82'
-};
-S.background = '#000';
-z();
+c=b.textContent;h='\43'/*` ,====, `*/;S=b.style;A=0;M=0;K=!1
+;H='\140';s=c.split('')/*` ;,,,,; `*/;B=s.map((x,i)=>[x,i]).
+filter((x)=>x[0]===h);l=/*` }##{ `*/c.split('\n')[1].length;
+k='\117';q='#888';z=F=>/*` /####\ `*/{d=d?0:1+1;A=A?(s[A-l-d
+]===h?A-l-d:0):B[Math./*` :######: `*/random()*B.length|0][1
+];b.innerHTML='\74pr'/*` /########\ `*/+'e\76'+s.map((x,i)=>
+{v=A&&i==A?k:x==k?h:/*` |``````````| `*/x;K=x==H?!K:K;vcl=v.
+fontcolor(C(x!=H?K&&/*` |   C0DE   | `*/v:0));return vcl;}).
+join('');setTimeout(z/*` \.______./ `*/,400);M++};C=x=>x?((t
+=Z[x])&&t.call?t():t)/*` |########| `*/||h+'fff':h+'333';d=2
+;S['background']='#0'/*` |########| `*/+'00';S['font'+'Size'
+]='5vh';T='toString';/*` )########( `*/W=Math;g=()=>{R=W.sin
+(M/32)*8+8|0;G=W.cos/*` /##########\ `*/(M/32)*8+8|0;V=W.cos
+(M/64+1.57)*8+8|0+0;/*` |##########| `*/return h+R[T](16)+G[
+T](16)+V[T](16)};Z={/*` '.##.##.##.' `*/'O':h+'a8'+'2','=':q
+,';':q,',':q,'0':g};/*`   '' '' ''   `*/Z[h]=h+'865';z('dy')
+
